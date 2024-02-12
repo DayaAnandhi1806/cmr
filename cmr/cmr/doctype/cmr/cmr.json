@@ -1,0 +1,400 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CMR.-.MM.-.YY.-.####",
+ "creation": "2023-11-03 12:34:19.120029",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_1jveg",
+  "meeting_with_new",
+  "meeting_with",
+  "column_break_yh5s5",
+  "existing_new",
+  "section_break_efmyv",
+  "code",
+  "salutation",
+  "name1",
+  "contact_person",
+  "column_break_mjthw",
+  "mobile",
+  "email",
+  "column_break_txdmi",
+  "meeting_type",
+  "meeting_agenda",
+  "column_break_totlm",
+  "meeting_status",
+  "add_followup",
+  "followup_date_time",
+  "physical_meeting_section",
+  "meeting_start_time",
+  "meeting_end_time",
+  "column_break_4uyat",
+  "area",
+  "pincode",
+  "column_break_nto4u",
+  "joint_meeting",
+  "column_break_mprhd",
+  "accompanied_with",
+  "employee_name",
+  "section_break_19ncy",
+  "remarks",
+  "section_break_tg9yn",
+  "revenue_sharing",
+  "insurance_sales",
+  "margin_collection",
+  "column_break_ccpbb",
+  "increase_mtf_book_size",
+  "pledge_creation",
+  "auditnon_complaint_points",
+  "column_break_lzfeo",
+  "product_awareness_training",
+  "structured_products",
+  "column_break_y3gfn",
+  "mutual_funds_investment",
+  "loan_products",
+  "meeting_summary_section",
+  "summary",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting_type",
+   "fieldtype": "Select",
+   "label": "Meeting Type",
+   "options": "Physical Meeting\nPhone\nVC/ZOOM"
+  },
+  {
+   "fieldname": "column_break_1jveg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "<p><span style=\"color: #16A085;\">Select <strong> Customer / Partner Alliance (PAL) </strong></span></p>",
+   "fieldname": "meeting_with",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Meeting With",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "section_break_efmyv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_mjthw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile",
+   "fieldtype": "Data",
+   "label": "Mobile",
+   "length": 10,
+   "mandatory_depends_on": "eval:doc.existing_new == 'New'",
+   "options": "Phone",
+   "read_only_depends_on": "eval:doc.existing_new == 'Existing'"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "read_only_depends_on": "eval:doc.existing_new == 'Existing'"
+  },
+  {
+   "fieldname": "column_break_txdmi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.meeting_type === \"VC/ZOOM\"",
+   "fieldname": "section_break_19ncy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "meeting_agenda",
+   "fieldtype": "Select",
+   "label": "Meeting Agenda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "meeting_status",
+   "fieldtype": "Select",
+   "label": "Meeting Status",
+   "options": "\nRequested for Second Meeting\nShown Interest\nNot Interested",
+   "reqd": 1
+  },
+  {
+   "description": "Provide Meeting Link",
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks",
+   "mandatory_depends_on": "eval: doc.meeting_type === \"VC/ZOOM\""
+  },
+  {
+   "description": "<p><span style=\"color: #16A085;\">Select or type <strong>hh:mm:ss</strong></span></p>",
+   "fieldname": "meeting_start_time",
+   "fieldtype": "Time",
+   "label": "Meeting Start Time"
+  },
+  {
+   "description": "<p><span style=\"color: #16A085;\">Select or type <strong>hh:mm:ss</strong></span></p>",
+   "fieldname": "meeting_end_time",
+   "fieldtype": "Time",
+   "label": "Meeting End Time"
+  },
+  {
+   "depends_on": "eval: doc.meeting_type === \"Physical Meeting\"",
+   "fieldname": "physical_meeting_section",
+   "fieldtype": "Section Break",
+   "label": "Physical Meeting"
+  },
+  {
+   "fieldname": "column_break_4uyat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "label": "Area/ Place"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Data",
+   "label": "Pincode"
+  },
+  {
+   "fieldname": "column_break_totlm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "add_followup",
+   "fieldtype": "Check",
+   "label": "Add Followup \ud83d\udd14"
+  },
+  {
+   "depends_on": "eval:doc.meeting_with === \"Partner Alliance\";",
+   "fieldname": "section_break_tg9yn",
+   "fieldtype": "Section Break",
+   "label": "<p><span style=\"color: #16A085;\"><strong>Business Growth Discussion</strong></span></p>"
+  },
+  {
+   "fieldname": "revenue_sharing",
+   "fieldtype": "Data",
+   "label": "Revenue Sharing"
+  },
+  {
+   "fieldname": "insurance_sales",
+   "fieldtype": "Data",
+   "label": "Insurance Sales"
+  },
+  {
+   "fieldname": "margin_collection",
+   "fieldtype": "Data",
+   "label": "Margin Collection"
+  },
+  {
+   "fieldname": "column_break_ccpbb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "increase_mtf_book_size",
+   "fieldtype": "Data",
+   "label": "Increase MTF book size"
+  },
+  {
+   "fieldname": "pledge_creation",
+   "fieldtype": "Data",
+   "label": "Pledge Creation"
+  },
+  {
+   "fieldname": "auditnon_complaint_points",
+   "fieldtype": "Data",
+   "label": "Audit/Non complaint points"
+  },
+  {
+   "fieldname": "column_break_lzfeo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_awareness_training",
+   "fieldtype": "Data",
+   "label": "Product awareness training"
+  },
+  {
+   "fieldname": "structured_products",
+   "fieldtype": "Data",
+   "label": "Structured products"
+  },
+  {
+   "fieldname": "column_break_y3gfn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mutual_funds_investment",
+   "fieldtype": "Data",
+   "label": "Mutual Funds investment"
+  },
+  {
+   "fieldname": "loan_products",
+   "fieldtype": "Data",
+   "label": "Loan Products"
+  },
+  {
+   "fieldname": "column_break_yh5s5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "<p><span style=\"color: #16A085;\">Select <strong> Existing / New </strong></span></p>",
+   "fieldname": "existing_new",
+   "fieldtype": "Select",
+   "label": "Existing / New",
+   "options": "Existing\nNew",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nto4u",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "mandatory_depends_on": "eval:doc.existing_new == 'New'",
+   "read_only_depends_on": "eval:doc.existing_new == 'Existing'"
+  },
+  {
+   "depends_on": "eval:doc.existing_new == 'Existing'",
+   "fieldname": "code",
+   "fieldtype": "Dynamic Link",
+   "label": "Code",
+   "mandatory_depends_on": "eval:doc.existing_new == 'Existing'",
+   "options": "meeting_with"
+  },
+  {
+   "fieldname": "meeting_summary_section",
+   "fieldtype": "Section Break",
+   "label": "<p><span style=\"color: #AF7AC5;\"><strong>Meeting Summary</strong></span></p>"
+  },
+  {
+   "fieldname": "summary",
+   "fieldtype": "Text Editor",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "joint_meeting",
+   "fieldtype": "Check",
+   "label": "Joint Meeting"
+  },
+  {
+   "depends_on": "eval:doc.joint_meeting == 1",
+   "fieldname": "accompanied_with",
+   "fieldtype": "Select",
+   "label": "Accompanied With",
+   "mandatory_depends_on": "eval:doc.joint_meeting == 1"
+  },
+  {
+   "fieldname": "column_break_mprhd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.joint_meeting == 1",
+   "fetch_from": "accompanied_with.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval: doc.add_followup === 1",
+   "fieldname": "followup_date_time",
+   "fieldtype": "Datetime",
+   "label": "Add Followup Date & Time",
+   "mandatory_depends_on": "eval: doc.add_followup === 1"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "CMR",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "description": "<p><span style=\"color: #16A085;\">Select <strong> Customer / Partner Alliance (PAL) </strong></span></p>",
+   "fieldname": "meeting_with_new",
+   "fieldtype": "Select",
+   "label": "Meeting With",
+   "options": "\nCustomer\nPartner Alliance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "label": "Contact Person",
+   "mandatory_depends_on": "eval:doc.existing_new == 'New'",
+   "read_only_depends_on": "eval:doc.existing_new == 'Existing'"
+  },
+  {
+   "depends_on": "eval:doc.meeting_with_new == 'Customer'",
+   "fieldname": "salutation",
+   "fieldtype": "Select",
+   "label": "Salutation",
+   "options": "\nMr\nMs\nMrs\nDr\nProf\nMx\nMadam",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-11-30 16:10:35.555266",
+ "modified_by": "Administrator",
+ "module": "CMR",
+ "name": "CMR",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CMR User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:meeting_agenda",
+ "creation": "2023-11-04 16:38:00.157792",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "meeting_agenda",
+  "meeting_with",
+  "column_break_jzroj",
+  "existing_new"
+ ],
+ "fields": [
+  {
+   "fieldname": "meeting_agenda",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Meeting Agenda",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "meeting_with",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Meeting With",
+   "options": "\nCustomer\nPartner Alliance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jzroj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "existing_new",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Existing / New",
+   "options": "\nExisting\nNew",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-10 14:45:10.843966",
+ "modified_by": "Administrator",
+ "module": "CMR",
+ "name": "CMR Meeting Agenda",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Relationship Manager",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CMR User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

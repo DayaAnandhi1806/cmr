@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:partner_alliance_code",
+ "creation": "2023-11-03 17:41:25.298254",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "partner_alliance_code",
+  "partner_alliance_name",
+  "phone",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "partner_alliance_code",
+   "fieldtype": "Data",
+   "label": "Partner Alliance Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "partner_alliance_name",
+   "fieldtype": "Data",
+   "label": "Partner Alliance Name"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-06 10:37:53.746487",
+ "modified_by": "Administrator",
+ "module": "CMR",
+ "name": "Partner Alliance",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "CMR",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

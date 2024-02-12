@@ -1,0 +1,77 @@
+{
+ "charts": [
+  {
+   "chart_name": "Client Meeting Summary",
+   "label": "Client Meeting Summary"
+  }
+ ],
+ "content": "[{\"id\":\"P6XeNBEtKC\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Client Meeting</span>\",\"col\":12}},{\"id\":\"pGwTn3Hz_r\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create New CMR\",\"col\":3}},{\"id\":\"dcaWqS4zJj\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Open CMR List\",\"col\":3}},{\"id\":\"ocBvSn24pL\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"CMR Detailed Report\",\"col\":3}},{\"id\":\"304ITkw8F-\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"CMR Summary Report\",\"col\":3}},{\"id\":\"hnuZuumUKr\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"4WgQvwM-QS\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Client Meeting Summary\",\"col\":12}},{\"id\":\"qhsY-Xrqe5\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"FTD All Meetings\",\"col\":4}},{\"id\":\"0x6wKKUwWE\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"FTD Customer Meetings\",\"col\":4}},{\"id\":\"iOPWB0bc3i\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"FTD Partner Meetings\",\"col\":4}},{\"id\":\"TVT10dB-vv\",\"type\":\"spacer\",\"data\":{\"col\":12}}]",
+ "creation": "2023-11-04 12:36:29.883942",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "review",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Client Meeting",
+ "links": [],
+ "modified": "2023-11-28 15:05:53.525442",
+ "modified_by": "Administrator",
+ "module": "CMR",
+ "name": "Client Meeting",
+ "number_cards": [
+  {
+   "label": "FTD Customer Meetings",
+   "number_card_name": "FTD Customer Meetings"
+  },
+  {
+   "label": "FTD All Meetings",
+   "number_card_name": "FTD All Meetings"
+  },
+  {
+   "label": "FTD Partner Meetings",
+   "number_card_name": "FTD Partner Meetings"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 3.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "Report Builder",
+   "label": "Open CMR List",
+   "link_to": "CMR",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "CMR Detailed Report",
+   "link_to": "CMR Detailed Report",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "CMR Summary Report",
+   "link_to": "CMR Summary Report",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "New",
+   "label": "Create New CMR",
+   "link_to": "CMR",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Client Meeting"
+}

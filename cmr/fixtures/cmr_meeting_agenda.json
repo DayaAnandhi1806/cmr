@@ -1,0 +1,74 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "CMR Meeting Agenda",
+  "existing_new": "Existing",
+  "meeting_agenda": "Relationship Call",
+  "meeting_with": "Customer",
+  "modified": "2023-11-10 14:42:52.677471",
+  "name": "Relationship Call"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "CMR Meeting Agenda",
+  "existing_new": "Existing",
+  "meeting_agenda": "Reference Seeking",
+  "meeting_with": "Customer",
+  "modified": "2023-11-10 14:43:02.290944",
+  "name": "Reference Seeking"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "CMR Meeting Agenda",
+  "existing_new": "Existing",
+  "meeting_agenda": "Distribution or Loan Products",
+  "meeting_with": "Customer",
+  "modified": "2023-11-10 14:43:13.208015",
+  "name": "Distribution or Loan Products"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "CMR Meeting Agenda",
+  "existing_new": "Existing",
+  "meeting_agenda": "Products Reactivation",
+  "meeting_with": "Customer",
+  "modified": "2023-11-10 14:43:23.175425",
+  "name": "Products Reactivation"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "CMR Meeting Agenda",
+  "existing_new": "New",
+  "meeting_agenda": "Broking",
+  "meeting_with": "Customer",
+  "modified": "2023-11-10 14:43:30.493420",
+  "name": "Broking"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "CMR Meeting Agenda",
+  "existing_new": "New",
+  "meeting_agenda": "Distribution Product",
+  "meeting_with": "Customer",
+  "modified": "2023-11-10 14:43:36.354596",
+  "name": "Distribution Product"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "CMR Meeting Agenda",
+  "existing_new": "New",
+  "meeting_agenda": "Loan Products",
+  "meeting_with": "Customer",
+  "modified": "2023-11-10 14:43:43.318802",
+  "name": "Loan Products"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "CMR Meeting Agenda",
+  "existing_new": "Existing",
+  "meeting_agenda": "Issue Resolution",
+  "meeting_with": "Partner Alliance",
+  "modified": "2023-11-10 14:45:19.969201",
+  "name": "Issue Resolution"
+ }
+]
